@@ -141,6 +141,16 @@ Attempting to connect to A0:5A:5D:7E:5C:6A
 [Wireless Controller]# exit
 ```
 
+- Turtlebot4のコモンパッケージをインストール
+
+```sh
+sudo apt update
+sudo apt install ros-jazzy-turtlebot4-description \
+ros-jazzy-turtlebot4-msgs \
+ros-jazzy-turtlebot4-navigation \
+ros-jazzy-turtlebot4-node
+```
+
 ## 参考サイト
 
 - [TurtleBot 4 - Clearpath Robotics](https://clearpathrobotics.com/turtlebot-4/ "TurtleBot 4 - Clearpath Robotics")
@@ -153,3 +163,4 @@ Attempting to connect to A0:5A:5D:7E:5C:6A
 - [Create® 3 Docs](https://iroboteducation.github.io/create3_docs/ "Create® 3 Docs")
 - [iRobot® Create® 3 turtlebot 4 | 3D CAD Model Library | GrabCAD](https://grabcad.com/library/irobot-create-3-turtlebot-4-1 "iRobot® Create® 3 turtlebot 4 | 3D CAD Model Library | GrabCAD")
 - [Home](http://192.168.1.142:8080/ "Home")
+- [Turtlebot4リポジトリ](https://github.com/turtlebot/turtlebot4 "")
