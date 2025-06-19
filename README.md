@@ -142,6 +142,10 @@ Attempting to connect to A0:5A:5D:7E:5C:6A
 ```
 
 - Turtlebot4のコモンパッケージをインストール
+  - turtlebot4-description：ロボット尾URDF記述と各コンポーネントのメッシュファイル
+  - turtlebot4-msgs：Turtlebot4で使用されるカスタムメッセージ
+  - turtlebot4-navigation：SLAMとナビゲーションを使用するための起動・構成ファイル・ナビゲータ用Pythonノード
+  - turtlebot4-node：ロボットのHMIとその他のロジックを制御するrclcppノードのソースコード
 
 ```sh
 sudo apt update
