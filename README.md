@@ -155,6 +155,12 @@ ros-jazzy-turtlebot4-navigation \
 ros-jazzy-turtlebot4-node
 ```
 
+- bringupをインストール
+
+```sh
+sudo apt install ros-jazzy-turtlebot4-bringup
+```
+
 ## 参考サイト
 
 - [TurtleBot 4 - Clearpath Robotics](https://clearpathrobotics.com/turtlebot-4/ "TurtleBot 4 - Clearpath Robotics")
