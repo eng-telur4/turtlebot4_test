@@ -2,6 +2,13 @@
 
 ## やったこと
 
+- Turtlebot4に入ってるROS2のバージョン確認
+
+```sh
+ubuntu@turtlebot4:~$ echo $ROS_DISTRO
+jazzy
+```
+
 ## 参考サイト
 
 - [TurtleBot 4 - Clearpath Robotics](https://clearpathrobotics.com/turtlebot-4/ "TurtleBot 4 - Clearpath Robotics")
