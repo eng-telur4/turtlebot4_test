@@ -17,14 +17,20 @@
 
 ### PCへのTurtlebot4の開発環境のセットアップ
 
-- Turtlebot4に入ってるROS2のバージョン確認
+- Turtlebot4のラズパイにリモート接続（Turtlebot4とPCは同じネットワークに接続されている必要がある。また5GHz帯でないといけない）
+
+```sh
+ssh ubuntu@<Turtlebot4のIPアドレス>
+```
+
+- Turtlebot4に入ってるROS2のバージョン確認（Turtlebot4とPCで同じバージョンを使用する必要がある）
 
 ```sh
 ubuntu@turtlebot4:~$ echo $ROS_DISTRO
 jazzy
 ```
 
-- LIFEBOOKのWindows 11のWSLにUbuntu 24.04をいれ、ROS2 Jazzyをインストールする
+- UbuntuにROS2 Jazzyをインストールする
 
 ```sh
 locale  # check for UTF-8
@@ -44,7 +50,7 @@ source /opt/ros/jazzy/setup.bash
 ```
 
 - UbuntuのターミナルからすぐにROSを操作できるよう、以下の設定を```~/.bashrc```に追記する
-- 記述後、ターミナルで```source ~/.bashrc```を実行（複数タブのターミナルを開いている場合は全てのタブを閉じる）
+- 記述後、ターミナルで```source ~/.bashrc```を実行（もしくは、開いている全てのターミナルを閉じて、開き直す）
 
 ```sh
 source /opt/ros/jazzy/setup.bash
@@ -80,12 +86,6 @@ networkingMode=mirrored
 ```sh
 ros2 topic list
 ros2 node list
-```
-
-- Turtlebot4のラズパイにリモート接続
-
-```sh
-ssh ubuntu@192.168.1.153
 ```
 
 - Turtlebot4のラズパイからWireless Controllerに接続
