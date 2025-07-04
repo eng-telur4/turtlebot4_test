@@ -2,6 +2,17 @@
 
 ## やったこと
 
+- Ubuntu専用PCの用意
+- Ubuntu 24.04のイメージを公式サイトからダウンロードし、RufusなどのツールでUSBのインストールメディアを作成
+- BIOS画面でブートオーダをUSB Memoryに変更
+- PCにインストールメディアのUSBを差し込み、インストール開始
+- インストールでは基本の表示言語は英語、キーボードはJapaneseを選択
+- インストール後ログインしたらターミナルを開き、```sudo apt update -y && sudo apt upgrade -y```を実行
+- 日本語入力を有効化する
+  - ```sudo apt install ibus-mozc -y```を実行し、その後```sudo reboot```で再起動する
+  - 再起動して設定から言語の設定に移動すると、自動で入力がJapanese (Mozc)になっているはず[参考サイト](https://qiita.com/takuya66520126/items/8bb760bf99c4e25364e3 "ubuntuで日本語入力に変更する方法 #Linux - Qiita")
+- Turtlebot4の開発環境をセットアップする（以下を参照）
+
 - Turtlebot4に入ってるROS2のバージョン確認
 
 ```sh
