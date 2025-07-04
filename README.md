@@ -45,7 +45,7 @@ sudo apt install curl -y
 export ROS_APT_SOURCE_VERSION=$(curl -s https://api.github.com/repos/ros-infrastructure/ros-apt-source/releases/latest | grep -F "tag_name" | awk -F\" '{print $4}')
 curl -L -o /tmp/ros2-apt-source.deb "https://github.com/ros-infrastructure/ros-apt-source/releases/download/${ROS_APT_SOURCE_VERSION}/ros2-apt-source_${ROS_APT_SOURCE_VERSION}.$(. /etc/os-release && echo $VERSION_CODENAME)_all.deb" # If using Ubuntu derivates use $UBUNTU_CODENAME
 sudo apt install /tmp/ros2-apt-source.deb -y
-sudo apt install ros-dev-tools ros-jazzy-desktop ros-jazzy-ros-base sudo apt install ros-jazzy-turtlebot4-desktop ros-jazzy-turtlebot4-description ros-jazzy-turtlebot4-msgs ros-jazzy-turtlebot4-navigation ros-jazzy-turtlebot4-node ros-jazzy-turtlebot4-bringup -y
+sudo apt install ros-dev-tools ros-jazzy-desktop ros-jazzy-ros-base ros-jazzy-turtlebot4-desktop ros-jazzy-turtlebot4-description ros-jazzy-turtlebot4-msgs ros-jazzy-turtlebot4-navigation ros-jazzy-turtlebot4-node ros-jazzy-turtlebot4-bringup -y
 source /opt/ros/jazzy/setup.bash
 ```
 
