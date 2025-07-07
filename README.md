@@ -99,7 +99,18 @@ ros2 node list
   - 接続できた時点で、コントローラの```L1```または```R1```ボタンを押しながら左ジョイスティックを動かすとTurtlebot4を動かすことができる
 
 ```sh
-PS C:\WINDOWS\system32> Get-PnpDevice -Class Bluetooth | Select-Object FriendlyName, InstanceId, Status                                                                                                                                         FriendlyName                           InstanceId                                                                       ------------                           ----------                                                                       Microsoft Bluetooth LE Enumerator      BTH\MS_BTHLE\6&1825021F&0&3                                                      soundcore P40i                         BTHENUM\DEV_880E851DF20B\7&A7FCA4F&0&BLUETOOTHDEVICE_880E851DF20B                soundcore P40i Avrcp Transport         BTHENUM\{0000110E-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&A7FCA4F&0&880E... Device Identification Service          BTHENUM\{00001200-0000-1000-8000-00805F9B34FB}_VID&0002054C_PID&05C4\7&A7FCA4... soundcore P40i Avrcp Transport         BTHENUM\{0000110C-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&A7FCA4F&0&880E... Microsoft Bluetooth Enumerator         BTH\MS_BTHBRB\6&1825021F&0&1                                                     Intel(R) Wireless Bluetooth(R)         USB\VID_8087&PID_0026\5&1730C901&0&10                                            Bluetooth Device (RFCOMM Protocol TDI) BTH\MS_RFCOMM\6&1825021F&0&0                                                     Wireless Controller                    BTHENUM\DEV_A05A5D7E5C6A\7&A7FCA4F&0&BLUETOOTHDEVICE_A05A5D7E5C6A  
+PS C:\WINDOWS\system32> Get-PnpDevice -Class Bluetooth | Select-Object FriendlyName, InstanceId, Status
+FriendlyName                           InstanceId
+------------                           ----------
+Microsoft Bluetooth LE Enumerator      BTH\MS_BTHLE\6&1825021F&0&3
+soundcore P40i                         BTHENUM\DEV_880E851DF20B\7&A7FCA4F&0&BLUETOOTHDEVICE_880E851DF20B
+soundcore P40i Avrcp Transport         BTHENUM\{0000110E-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&A7FCA4F&0&880E...
+Device Identification Service          BTHENUM\{00001200-0000-1000-8000-00805F9B34FB}_VID&0002054C_PID&05C4\7&A7FCA4...
+soundcore P40i Avrcp Transport         BTHENUM\{0000110C-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&A7FCA4F&0&880E...
+Microsoft Bluetooth Enumerator         BTH\MS_BTHBRB\6&1825021F&0&1
+Intel(R) Wireless Bluetooth(R)         USB\VID_8087&PID_0026\5&1730C901&0&10
+Bluetooth Device (RFCOMM Protocol TDI) BTH\MS_RFCOMM\6&1825021F&0&0
+Wireless Controller                    BTHENUM\DEV_A05A5D7E5C6A\7&A7FCA4F&0&BLUETOOTHDEVICE_A05A5D7E5C6A  
 ```
 
 ## 参考サイト
