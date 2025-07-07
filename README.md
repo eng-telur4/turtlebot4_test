@@ -2,7 +2,16 @@
 
 ## やったこと
 
-### Ubuntu専用PCのセットアップ
+### 環境構築
+
+1. WSLで行う場合
+
+- コントロールパネルでWindowsのWSLを有効化する
+- Microsoft StoreからUbuntu 24.04をインストールする
+- 起動時にユーザ名とパスワードを入力し、とりあえず```sudo apt update -y && sudo apt upgrade -y```を実行する
+- Turtlebot4の開発環境をセットアップする（以下を参照）
+
+2. Ubuntu専用PCを使う場合
 
 - Ubuntu専用PCの用意
 - Ubuntu 24.04のイメージを公式サイトからダウンロードし、RufusなどのツールでUSBのインストールメディアを作成
@@ -15,7 +24,7 @@
   - 再起動して設定から言語の設定に移動すると、自動で入力がJapanese (Mozc)になっているはず[参考サイト](https://qiita.com/takuya66520126/items/8bb760bf99c4e25364e3 "ubuntuで日本語入力に変更する方法 #Linux - Qiita")
 - Turtlebot4の開発環境をセットアップする（以下を参照）
 
-### PCへのTurtlebot4の開発環境のセットアップ
+### Turtlebot4の開発環境のセットアップ
 
 - Turtlebot4のラズパイにリモート接続（Turtlebot4とPCは同じネットワークに接続されている必要がある。また5GHz帯でないといけない）
 
