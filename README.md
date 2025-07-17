@@ -4,14 +4,14 @@
 
 ### 環境構築
 
-1. WSLで行う場合
+1. WSLで行う場合（非推奨）
 
 - コントロールパネルでWindowsのWSLを有効化する
 - Microsoft StoreからUbuntu 24.04をインストールする
 - 起動時にユーザ名とパスワードを入力し、とりあえず```sudo apt update -y && sudo apt upgrade -y```を実行する
 - Turtlebot4の開発環境をセットアップする（以下を参照）
 
-2. Ubuntu専用PCを使う場合
+2. Ubuntu専用PCを使う場合（推奨：WSLで行うとtopicの共有が出来なかったため）
 
 - Ubuntu専用PCの用意
 - Ubuntu 24.04のイメージを公式サイトからダウンロードし、RufusなどのツールでUSBのインストールメディアを作成
